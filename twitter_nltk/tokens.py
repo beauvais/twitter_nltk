@@ -10,4 +10,4 @@ def token(text):
 		return tokens
 
 token(text)
-print tokens[0:20]
+# print tokens[0:20]
