@@ -1,14 +1,18 @@
 #! /usr/bin/python
 
-from sys import argv
+#from sys import argv
+# you can use this if you want to use argv to define your own files.
 import pandas as pd
 
 # We use pandas for reading and writing your csv file to a text file.
 
-script, filename, output_file = argv
+#script, filename, output_file = argv
 
 # Input your csv file (which, when using the twitter archive is 'tweets.csv') 
 # when calling the script. Choose your output file name at the same time.
+
+filename = "data/tweets.csv"
+output_file = "data/output.txt"
 
 def import_text(filename):
 	pd.set_option('display.max_colwidth', -1)
